@@ -38,7 +38,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .about_09Fx {
     font-size: 120px;
     background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
@@ -446,11 +446,6 @@ body {
   border-radius: 15px;
   padding: 15px;
 }
-
-
-
-
-
 
 
 

@@ -8,9 +8,24 @@
 	<title>TPT Token</title>
 	<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Paytone+One&family=Poppins&family=Ramabhadra&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript"></script>
 </head>
 <body>
+	<script type="text/javascript">
+		function getDate()
+		{
+			var date = new Date();
+			var hours = date.getHours();
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+
+			if (seconds < 10)
+			{
+				seconds = '0' + seconds
+			}
+			document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+		}
+		setInterval(getDate, 0);
+	</script>
 	<header class="view_header_cn">
 		<nav class="nav_view_cn">
 			<div class="logo_view_9vxA" style="display: flex; align-items: center; font-size: 16px;">
@@ -60,43 +75,58 @@
 			</div>
 		</form>
 	</div>
-	<div style="background: white; z-index: 1;">
-		<div class='ntm_90kk' style="margin-top: 30px; margin: 20px; z-index: 2; background: white;">
-			<h1 style="font-family: 'Ramabhadra', sans-serif; font-size: 29px">Buy TPTradix on <b style="color: orange;">DeDust</b> | <b style="color: skyblue;">xRocket</b> | <b style="color: #4287f5">CryptoFarm</b></h1>
+	<div style="background: white; z-index: 1">
+		<div style="background: white; z-index: 1;">
+			<div class='ntm_90kk' style="margin-top: 30px; margin: 20px; z-index: 2; background: white;">
+				<h1 style="font-family: 'Ramabhadra', sans-serif; font-size: 29px">Buy TPTradix on <b style="color: orange;">DeDust</b> | <b style="color: skyblue;">xRocket</b> | <b style="color: #4287f5">CryptoFarm</b></h1>
+			</div>
+			<div class="service" style="margin-top: 30px">
+				<h2 style="font-family: 'Poppins', sans-serif; color: white;">DeDust</h2>
+				<img width="300" height="600" src="./image/d.jpg" alt="dedust" style="background: transparent; border-radius: 40px; margin-right: 10px; border: 4px solid black;">
+				<div class="dedust_desp">
+					<p class='deinf' style="font-family: 'Poppins', sans-serif; color: white; margin: 20px;">Deposit ton into the TPTradix pool, receive rewards and interest. The goal is 1000 TON</p>
+				</div>
+				<div>
+					<button style="font-family: 'Poppins', sans-serif; border: 0; border-radius: 20px; font-size: 20px; padding: 10px; background: #f7f9fb; margin-bottom: 10px;" onclick="location.href='https://dedust.io/pools/EQDZBQhhbVcGN69_6VXZNNt69v_OYtJ6VwQ4iShyR-YBxMhj/deposit'">Deposit</button>
+				</div>
+			</div>
 		</div>
-		<div class="service" style="margin-top: 30px">
-			<h2 style="font-family: 'Poppins', sans-serif; color: white;">DeDust</h2>
-			<img width="300" height="600" src="./image/d.jpg" alt="dedust" style="background: transparent; border-radius: 40px; margin-right: 10px; border: 4px solid black;">
-			<div class="dedust_desp">
-				<p class='deinf' style="font-family: 'Poppins', sans-serif; color: white; margin: 20px;">Deposit ton into the TPTradix pool, receive rewards and interest. The goal is 1000 TON</p>
-			</div>
+		<div style="background: white; z-index: 1;">
 			<div>
-				<button style="font-family: 'Poppins', sans-serif; border: 0; border-radius: 20px; font-size: 20px; padding: 10px; background: #f7f9fb; margin-bottom: 10px;" onclick="location.href='https://dedust.io/pools/EQDZBQhhbVcGN69_6VXZNNt69v_OYtJ6VwQ4iShyR-YBxMhj/deposit'">Deposit</button>
+				<h1 style="font-family: 'Ramabhadra', sans-serif; font-size: 29px; margin: 20px; background: white; margin-top: 0px; padding-top: 20px;">24 hour pool volume</h1>
+			</div>
+			<div class="total_pool_hight">
+				<div>
+					<h2 style="font-family: 'Poppins', sans-serif; color: gray; text-align: left; font-size: 20px;">TPT pool volume</h2>
+				</div>
+				<div>
+					<p style="font-family: 'Poppins', sans-serif; text-align: left; font-size: 14px">The total pool size and contributions are updated every 24 hours <b id="timer" style="color: #4287f5;"></b></p>
+				</div>
+				<div>
+					<h1 style="font-family: 'Ramabhadra', sans-serif; color: deepskyblue;">0006.2</h1>
+				</div>
+				<div>
+					<p style="font-family: 'Poppins', sans-serif;">TON</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div style="background: white; z-index: 1;">
-		<div>
-			<h1 style="font-family: 'Ramabhadra', sans-serif; font-size: 29px; margin: 20px; background: white; margin-top: 0px; padding-top: 20px;">24 hour pool volume</h1>
-		</div>
-		<div class="total_pool_hight">
-			<div>
-				<h2 style="font-family: 'Poppins', sans-serif; color: gray; text-align: left; font-size: 20px;">TPT pool volume</h2>
-			</div>
-			<div>
-				<p style="font-family: 'Poppins', sans-serif; text-align: left; font-size: 14px">The total pool size and contributions are updated every 24 hours</p>
-			</div>
-			<div>
-				<h1 style="font-family: 'Ramabhadra', sans-serif; color: deepskyblue;">0004.7</h1>
-			</div>
-			<div>
-				<p style="font-family: 'Poppins', sans-serif;">TON</p>
+		<div style="background: white; z-index: 1;">
+			<div style="background: #4287f5; width: auto; height: 1px; opacity: .5; margin: 20px"></div>
+			<div style="display: flex; align-items: center; justify-content: space-between;">
+				<div style="display: flex; align-items: center; font-size: 16px; padding: 10px; padding-top: 0px">
+					<img width="50px" height="50px" src="./image/tpt.jpg" alt="TPT" style="background: transparent;">
+					<h1 style="font-family: 'Ramabhadra', sans-serif; font-size: 18px">TPT</h1>
+				</div>
+				<div style="padding: 25px;">
+					<img style="margin-right: 5px;" width="20px" height="20px" src="./image/message.png" alt="message">
+					<img style="margin-right: 5px;" width="20px" height="20px" src="./image/telegram.png" alt="message">
+					<img style="margin-right: 5px;" width="20px" height="20px" src="./image/twitter.png" alt="message">
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
-
 
 
 

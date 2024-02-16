@@ -29,9 +29,9 @@
     <script>
         const tg = window.Telegram.WebApp;
         let bt = document.getElementById('accept');
-        let is = document.getElementById('id').value;
 
         bt.addEventListener('click', () => {
+            let is = document.getElementById('id');
             is.value = tg.initDataUnsafe.user.id;
         })
     </script>

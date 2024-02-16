@@ -13,10 +13,13 @@
             <div style="display: flex; justify-content: center; margin-top: 15%;">
                 <img width="150px" height="150px" src='https://raw.githubusercontent.com/pytgcalls/ntgcalls/master/.github/images/fast.gif'>
             </div>
-            <div style="display: grid; justify-content: center; align-items: center; text-align: center;">
-                <h2 style="font-size: 22px; font-family: 'Ubuntu'; color: var(--tg-theme-text-color);">Welcome to OpenWorks</h2>
-                <p id="i" style="font-size: 14px; font-family: 'Lato'; color: var(--tg-theme-text-color);">Work and Earn</p>
-            </div>
+            <form>
+                <div style="display: grid; justify-content: center; align-items: center; text-align: center;">
+                    <h2 style="font-size: 22px; font-family: 'Ubuntu'; color: var(--tg-theme-text-color);">Welcome to OpenWorks</h2>
+                    <p id="i" style="font-size: 14px; font-family: 'Lato'; color: var(--tg-theme-text-color);">Work and Earn</p>
+                    <input name="id" id="id" value="">
+                </div>
+            </form>
         </div>
         <div style="display: flex; width: 100%; bottom: 0; position: absolute;">
             <button id="accept" style="background-color: #3390EC; border: 0; font-size: 17px; font-family: 'Ubuntu'; color: #FFFFFF; width: 100%; height: 40px;">Start</button>
@@ -26,10 +29,10 @@
     <script>
         const tg = window.Telegram.WebApp;
         let bt = document.getElementById('accept');
-        let is = document.getElementById('i');
+        let is = document.getElementById('id').value;
 
         bt.addEventListener('click', () => {
-            is.innerHTML = tg.initDataUnsafe.user.id
+            is.value = tg.initDataUnsafe.user.id;
         })
     </script>
 </body>
